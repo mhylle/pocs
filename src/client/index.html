@@ -21,8 +21,8 @@
 
   <!-- build:css styles/lib.css -->
   <!-- bower:css -->
-  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css" />
-  <link rel="stylesheet" href="/bower_components/toastr/toastr.css" />
+  <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css"/>
+  <link rel="stylesheet" href="/bower_components/toastr/toastr.css"/>
   <!-- endbower -->
   <!-- endbuild -->
 
@@ -37,23 +37,25 @@
 <div ng-controller="DataController as vm" class="dataticker">
   <div class="previous" ng-click="vm.previous()"><img ng-src="images/previous.jpg" width="50"/></div>
 
-  <div ng-repeat="data in vm.data track by data.id" class="content slide slide-animation" ng-hide="!vm.isCurrentSlideIndex($index)">
+  <div ng-repeat="data in vm.data track by data.id" class="content slide slide-animation"
+       ng-hide="!vm.isCurrentSlideIndex($index)">
 
     <div class="dataname ">{{data.name}}</div>
     <div class="shortdesc row">{{data.shortdesc}}</div>
+    <div class="dataprice">
+      <div><span>Kun <br>{{data.price}}</span></div>
+    </div>
     <div class="dataimage"><img ng-src="{{data.image}}"/></div>
     <div class="datadescription">{{data.description}}</div>
   </div>
 
 
-
-
   <!--<div class="content swap-animation" ng-animate-swap="vm.currentIndex">-->
-    <!--<div class="dataid">{{vm.selectedData.id}}</div>-->
-    <!--<div class="dataname">{{vm.selectedData.name}}</div>-->
-    <!--<div class="shortdesc">{{vm.selectedData.shortdesc}}</div>-->
-    <!--<div class="datadescription">{{vm.selectedData.description}}</div>-->
-    <!--<div><img ng-src="{{vm.selectedData.image}}"/></div>-->
+  <!--<div class="dataid">{{vm.selectedData.id}}</div>-->
+  <!--<div class="dataname">{{vm.selectedData.name}}</div>-->
+  <!--<div class="shortdesc">{{vm.selectedData.shortdesc}}</div>-->
+  <!--<div class="datadescription">{{vm.selectedData.description}}</div>-->
+  <!--<div><img ng-src="{{vm.selectedData.image}}"/></div>-->
   <!--</div>-->
   <div class="next" ng-click="vm.next()"><img ng-src="images/previous.jpg" width="50"/></div>
 </div>

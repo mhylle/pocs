@@ -71,6 +71,38 @@
 
 }
 
+.dataprice {
+  float: right;
+  padding: 3px;
+  text-align: center;
+
+  border-radius: 50%;
+  background: #f0bc64;
+  width: 100px;
+  height: 100px;
+
+  -webkit-box-shadow: 1px 2px 4px -1px rgba(0, 0, 0, 0.56);
+  -moz-box-shadow: 1px 2px 4px -1px rgba(0, 0, 0, 0.56);
+  box-shadow: 1px 2px 4px -1px rgba(0, 0, 0, 0.56);
+
+}
+
+.dataprice > div {
+  vertical-align: middle;
+  position: relative;
+  border-radius: 50%;
+  background: #bcd0f0;
+  font-weight: bold;
+  display: block;
+  height: 94px;
+  line-height: 14px;
+}
+
+.dataprice > div > span {
+  vertical-align: middle;
+  line-height: 14px;
+}
+
 .dataimage {
   float: left;
   margin: 8px;
@@ -94,8 +126,18 @@
   clear: both;
   height: 0;
 }
-.clearfix { display: inline-block; }
+
+.clearfix {
+  display: inline-block;
+}
+
 /* start commented backslash hack \*/
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
+* html .clearfix {
+  height: 1%;
+}
+
+.clearfix {
+  display: block;
+}
+
 /* close commented backslash hack */
