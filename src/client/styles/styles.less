@@ -1,0 +1,101 @@
+@color_lightblue: #52b9e9;
+@color_blue: #1171a3;
+@color_success: #43c83c;
+@color_warning: #f88529;
+@color_important: #fa3031;
+@color_violet: #932ab6;
+
+* {
+  /*-webkit-box-shadow: none !important;
+  -ms-box-shadow: none !important;
+  box-shadow: none !important;
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false) !important;
+  -webkit-text-shadow: none !important;
+  -ms-text-shadow: none !important;
+  text-shadow: none !important;*/
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  /*font-weight: 400;*/
+}
+
+.previous {
+  float: left;
+  transform: translateY(250%);
+}
+
+.next {
+  float: right;
+  transform: translateY(250%);
+}
+
+.next img {
+  transform: rotate(180deg);
+}
+
+.content {
+  display: inline-block;
+  width: 75%;
+}
+
+.dataticker {
+  position: relative;
+  width: 640px;
+}
+
+.slide {
+  position: relative;
+  top: 0;
+  left: 0px;
+}
+
+.dataid {
+  float: left;
+  margin-right: 4px;
+}
+
+.dataname {
+  float: left;
+  font-size: large;
+}
+
+.shortdesc {
+  clear: both;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin-left: 4px;
+
+}
+
+.datadescription {
+
+}
+
+.dataimage {
+  float: left;
+  margin: 8px;
+  border: 1px solid grey;
+}
+
+.innerCarousel {
+  //position: relative;
+}
+
+.dataticker {
+  top: 150px;
+  left: 550px;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
